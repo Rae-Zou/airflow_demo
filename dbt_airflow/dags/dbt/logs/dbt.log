@@ -1,0 +1,105 @@
+[0m13:14:01.521414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B1F5CE9F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B21F892B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B21F88DA0>]}
+
+
+============================== 13:14:01.537050 | 063c6d9b-0686-45f0-b950-a83da92ca2e8 ==============================
+[0m13:14:01.537050 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:14:01.537050 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m13:14:19.067167 [debug] [MainThread]: Starter project path: C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\include\starter_project
+[0m13:14:19.119952 [info ] [MainThread]: 
+Your new dbt project "cosmosproject" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:14:19.119952 [info ] [MainThread]: Setting up your profile.
+[0m13:15:58.893443 [error] [MainThread]: Encountered an error:
+
+[0m13:15:58.902274 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\cli\main.py", line 469, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 347, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 263, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 180, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 164, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 130, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:15:58.912080 [debug] [MainThread]: Command `dbt init` failed at 13:15:58.911078 after 117.58 seconds
+[0m13:15:58.913069 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B21E31DC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B2167A840>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027B22E4B6E0>]}
+[0m13:15:58.929434 [debug] [MainThread]: Flushing usage events
+[0m13:16:07.720256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB61D1AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB5A80260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB61D1B20>]}
+
+
+============================== 13:16:07.737425 | c0026ce8-4c3f-4a87-92ed-1dc808bbb23a ==============================
+[0m13:16:07.737425 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:16:07.737425 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m13:16:24.879945 [debug] [MainThread]: Starter project path: C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\include\starter_project
+[0m13:16:24.924131 [info ] [MainThread]: 
+Your new dbt project "cosmos_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:16:24.928620 [info ] [MainThread]: Setting up your profile.
+[0m13:17:08.617667 [info ] [MainThread]: Profile cosmos_project written to C:\Users\asus\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m13:17:08.623408 [debug] [MainThread]: Command `dbt init` succeeded at 13:17:08.622413 after 61.21 seconds
+[0m13:17:08.625688 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB613E600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB805BFE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAB5F03500>]}
+[0m13:17:08.633522 [debug] [MainThread]: Flushing usage events
+[0m13:17:35.018599 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBEAF05D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBEAF06060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBEAF05D00>]}
+
+
+============================== 13:17:35.022594 | 5579ae04-6f86-4b42-9a49-f8819317c31b ==============================
+[0m13:17:35.022594 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:17:35.030836 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:17:35.073460 [info ] [MainThread]: dbt version: 1.8.0
+[0m13:17:35.188920 [info ] [MainThread]: python version: 3.12.3
+[0m13:17:35.235939 [info ] [MainThread]: python path: C:\Users\asus\miniforge3\envs\dbt-snowflake\python.exe
+[0m13:17:35.249959 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m13:17:37.492506 [info ] [MainThread]: Using profiles dir at C:\Users\asus\.dbt
+[0m13:17:37.494500 [info ] [MainThread]: Using profiles.yml file at C:\Users\asus\.dbt\profiles.yml
+[0m13:17:37.497501 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\asus\Desktop\GitHub\airflow_demo\dbt_airflow\dags\dbt\dbt_project.yml
+[0m13:17:37.500502 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m13:17:37.506005 [debug] [MainThread]: Command `dbt debug` failed at 13:17:37.506005 after 3.71 seconds
+[0m13:17:37.509004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBE72C7EC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBEB13C2C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002CBECE16E10>]}
+[0m13:17:37.511007 [debug] [MainThread]: Flushing usage events

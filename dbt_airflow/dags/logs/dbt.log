@@ -1,0 +1,34 @@
+[0m13:13:37.143745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219432F6A20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021945C7DAF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021945C7DBE0>]}
+
+
+============================== 13:13:37.143745 | 0c35e7e0-11c5-4c18-aff9-01433d3dcb01 ==============================
+[0m13:13:37.143745 [info ] [MainThread]: Running with dbt=1.8.0
+[0m13:13:37.159361 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\asus\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init dbt', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:13:45.357452 [error] [MainThread]: Encountered an error:
+
+[0m13:13:45.420007 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\cli\main.py", line 469, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 325, in run
+    project_name = self.get_valid_project_name()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\dbt\task\init.py", line 279, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asus\miniforge3\envs\dbt-snowflake\Lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:13:45.421648 [debug] [MainThread]: Command `dbt init` failed at 13:13:45.421648 after 8.60 seconds
+[0m13:13:45.421648 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002193FD560C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002194598AA20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021945C7DAF0>]}
+[0m13:13:45.421648 [debug] [MainThread]: Flushing usage events

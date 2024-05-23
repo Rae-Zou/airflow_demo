@@ -1,0 +1,5 @@
+
+dbt_airflow/.astro/config.yaml
+dbt_airflow/dags/dbt/cosmos_project/analyses/.gitkeep
+dbt_airflow/dags/dbt/cosmos_project/macros/.gitkeep
+dbt_airflow/dags/dbt/cosmos_project/seeds/.gitkeep
